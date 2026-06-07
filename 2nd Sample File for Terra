@@ -1,0 +1,21 @@
+// random-quote.js
+
+const quotes = [
+  "Small progress is still progress.",
+  "Done is better than perfect.",
+  "Consistency beats motivation.",
+  "Every expert was once a beginner.",
+  "Success is built one step at a time."
+];
+
+function getRandomQuote() {
+  const index = Math.floor(Math.random() * quotes.length);
+  return quotes[index];
+}
+
+function main() {
+  console.log("💡 Quote of the Day");
+  console.log(getRandomQuote());
+}
+
+main();
