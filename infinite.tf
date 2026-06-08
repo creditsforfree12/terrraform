@@ -1,12 +1,4 @@
-terraform {
-  required_providers {
-    local = {
-      source = "hashicorp/local"
-    }
-  }
-}
-
-resource "local_file" "example" {
-  filename = "example.txt"
-  content  = "Hello Terraform"
+resource "random_string" "example" {
+  length  = 10
+  special = false
 }
