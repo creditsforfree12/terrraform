@@ -4,4 +4,7 @@ provider "aws" {
 
 resource "aws_iam_user" "example" {
   name = "terraform-user"
+ lifecycle {
+    create_before_destroy = false
+  }
 }
